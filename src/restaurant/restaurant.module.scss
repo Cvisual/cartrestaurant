@@ -1,0 +1,36 @@
+.init {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__header {
+        position: relative;
+        text-align: center;
+        background-image: url("../../../../public/restaurant/header.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        height: 30vh;
+        padding: 5vh 5vh 0vh;
+        backdrop-filter: brightness(0.2);
+        & > a > img {
+          margin: 20px 10px 5px;
+          width: 80px;
+          height: 80px;
+        }
+        & > p {
+          font-size: 1.5rem;
+          line-height: initial;
+        }
+        & > ul {
+          list-style: none;
+          display: inline-flex;
+        }
+        & > ul > li {
+          color: white;
+          background-color: black;
+          border-radius: 4px;
+          margin: 5px;
+          padding: 5px 20px;
+        }
+      }
+}

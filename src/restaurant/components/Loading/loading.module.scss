@@ -1,0 +1,45 @@
+@keyframes hex-spinner-animation-a {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes hex-spinner-animation-b {
+  0% {
+    transform: scaleX(0);
+  }
+  40% {
+    transform: scaleX(1);
+  }
+  60% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+
+.loader {
+  text-align: center;
+  font-weight: bolder;
+  width: 100%;
+  text-align: center;
+  font-weight: bolder;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__logo {
+    display: inline-flex;
+    animation: hex-spinner-animation-a 2s infinite ease-out,
+      hex-spinner-animation-b 2s infinite ease-out;
+  }
+}
